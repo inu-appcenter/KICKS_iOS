@@ -7,23 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510A05808693E090F8D91F70 /* Pods_INS_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */; };
+		DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */; };
 		DA68386923642762004D07B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68386823642762004D07B0 /* AppDelegate.swift */; };
 		DA68386B23642762004D07B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68386A23642762004D07B0 /* SceneDelegate.swift */; };
-		DA68386D23642762004D07B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68386C23642762004D07B0 /* ViewController.swift */; };
 		DA68387023642762004D07B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA68386E23642762004D07B0 /* Main.storyboard */; };
 		DA68387223642763004D07B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA68387123642763004D07B0 /* Assets.xcassets */; };
 		DA68387523642763004D07B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA68387323642763004D07B0 /* LaunchScreen.storyboard */; };
+		DAB7A0772376F3390006CBCF /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0762376F3390006CBCF /* Chat.storyboard */; };
+		DAB7A0792376F3B10006CBCF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0782376F3B10006CBCF /* Home.storyboard */; };
+		DAB7A07B2376F3C40006CBCF /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A07A2376F3C40006CBCF /* MyPage.storyboard */; };
+		DAB7A07D2376F41D0006CBCF /* Estimate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A07C2376F41D0006CBCF /* Estimate.storyboard */; };
+		DAB7A07F2376F4350006CBCF /* LoginSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A07E2376F4350006CBCF /* LoginSignup.storyboard */; };
+		DAB7A0822377033D0006CBCF /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A0812377033D0006CBCF /* ChatManager.swift */; };
+		DAB7A08423770B100006CBCF /* ChatMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A08323770B100006CBCF /* ChatMainViewController.swift */; };
+		DAB7A0862377103E0006CBCF /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A0852377103E0006CBCF /* ChatRoomViewController.swift */; };
+		DAB7A088237728560006CBCF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A087237728560006CBCF /* ColorExtension.swift */; };
+		DAB7A08A237729DE0006CBCF /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A089237729DE0006CBCF /* ChatMessageCell.swift */; };
+		DAC1A2BB237D4CCD000E21DE /* HomeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1A2BA237D4CCD000E21DE /* HomeMainViewController.swift */; };
+		DAC1A2BD237D4FAF000E21DE /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1A2BC237D4FAF000E21DE /* CALayerExtension.swift */; };
+		DAC1A2C2237D5076000E21DE /* MGothic_M.otf in Resources */ = {isa = PBXBuildFile; fileRef = DAC1A2BE237D5075000E21DE /* MGothic_M.otf */; };
+		DAC1A2C3237D5076000E21DE /* MGothic_EB.otf in Resources */ = {isa = PBXBuildFile; fileRef = DAC1A2BF237D5075000E21DE /* MGothic_EB.otf */; };
+		DAC1A2C4237D5076000E21DE /* MGothic_SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = DAC1A2C0237D5075000E21DE /* MGothic_SB.otf */; };
+		DAC1A2C5237D5076000E21DE /* MGothic_R.otf in Resources */ = {isa = PBXBuildFile; fileRef = DAC1A2C1237D5075000E21DE /* MGothic_R.otf */; };
+		DAC1A2C8237D50D4000E21DE /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1A2C7237D50D4000E21DE /* FontExtension.swift */; };
+		DAC1A2CA237D5399000E21DE /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1A2C9237D5399000E21DE /* MainTabbarController.swift */; };
+		DAF1C9FE2375B85300B3EF31 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1C9FD2375B85300B3EF31 /* SocketIOManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INS_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56771ACD9413B24BE47E1B1E /* Pods-INS-UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.debug.xcconfig"; sourceTree = "<group>"; };
+		CAECA275814FE9ED0EDB2907 /* Pods-INS-UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.release.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.release.xcconfig"; sourceTree = "<group>"; };
+		DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
 		DA68386523642762004D07B0 /* INS-UP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "INS-UP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA68386823642762004D07B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA68386A23642762004D07B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA68386C23642762004D07B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA68386F23642762004D07B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA68387123642763004D07B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA68387423642763004D07B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA68387623642763004D07B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB7A0762376F3390006CBCF /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		DAB7A0782376F3B10006CBCF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DAB7A07A2376F3C40006CBCF /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		DAB7A07C2376F41D0006CBCF /* Estimate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Estimate.storyboard; sourceTree = "<group>"; };
+		DAB7A07E2376F4350006CBCF /* LoginSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignup.storyboard; sourceTree = "<group>"; };
+		DAB7A0812377033D0006CBCF /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		DAB7A08323770B100006CBCF /* ChatMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMainViewController.swift; sourceTree = "<group>"; };
+		DAB7A0852377103E0006CBCF /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		DAB7A087237728560006CBCF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		DAB7A089237729DE0006CBCF /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		DAC1A2BA237D4CCD000E21DE /* HomeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainViewController.swift; sourceTree = "<group>"; };
+		DAC1A2BC237D4FAF000E21DE /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		DAC1A2BE237D5075000E21DE /* MGothic_M.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MGothic_M.otf; sourceTree = "<group>"; };
+		DAC1A2BF237D5075000E21DE /* MGothic_EB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MGothic_EB.otf; sourceTree = "<group>"; };
+		DAC1A2C0237D5075000E21DE /* MGothic_SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MGothic_SB.otf; sourceTree = "<group>"; };
+		DAC1A2C1237D5075000E21DE /* MGothic_R.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MGothic_R.otf; sourceTree = "<group>"; };
+		DAC1A2C7237D50D4000E21DE /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		DAC1A2C9237D5399000E21DE /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		DAF1C9FD2375B85300B3EF31 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +73,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510A05808693E090F8D91F70 /* Pods_INS_UP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		659A7A9F5232A7B3C6D4FA1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56771ACD9413B24BE47E1B1E /* Pods-INS-UP.debug.xcconfig */,
+				CAECA275814FE9ED0EDB2907 /* Pods-INS-UP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9189D74ADB1EE5B0044E2D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA34E7B9237DAFED00FCFC34 /* Estimate */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A07C2376F41D0006CBCF /* Estimate.storyboard */,
+			);
+			path = Estimate;
+			sourceTree = "<group>";
+		};
+		DA34E7BA237DB0B800FCFC34 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A07E2376F4350006CBCF /* LoginSignup.storyboard */,
+				DA5DA46A237DB5180005FB8B /* ViewController */,
+			);
+			path = LoginSignup;
+			sourceTree = "<group>";
+		};
+		DA34E7BB237DB0F100FCFC34 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1A2C9237D5399000E21DE /* MainTabbarController.swift */,
+				DA68386E23642762004D07B0 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DA34E7BC237DB11900FCFC34 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DAF1C9FD2375B85300B3EF31 /* SocketIOManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DA5DA46A237DB5180005FB8B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		DA68385C23642762004D07B0 = {
 			isa = PBXGroup;
 			children = (
 				DA68386723642762004D07B0 /* INS-UP */,
 				DA68386623642762004D07B0 /* Products */,
+				659A7A9F5232A7B3C6D4FA1D /* Pods */,
+				9189D74ADB1EE5B0044E2D93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +162,94 @@
 			children = (
 				DA68386823642762004D07B0 /* AppDelegate.swift */,
 				DA68386A23642762004D07B0 /* SceneDelegate.swift */,
-				DA68386C23642762004D07B0 /* ViewController.swift */,
-				DA68386E23642762004D07B0 /* Main.storyboard */,
+				DA77F6CC2377390600A7FC6C /* Fonts */,
+				DAC1A2C6237D50C0000E21DE /* Extensions */,
+				DA34E7BC237DB11900FCFC34 /* Network */,
+				DA34E7BB237DB0F100FCFC34 /* Main */,
+				DAC1A2B2237D4A63000E21DE /* Home */,
+				DA34E7B9237DAFED00FCFC34 /* Estimate */,
+				DAC1A2B3237D4A70000E21DE /* Chat */,
+				DAC1A2B4237D4A81000E21DE /* MyPage */,
+				DA34E7BA237DB0B800FCFC34 /* LoginSignup */,
 				DA68387123642763004D07B0 /* Assets.xcassets */,
 				DA68387323642763004D07B0 /* LaunchScreen.storyboard */,
 				DA68387623642763004D07B0 /* Info.plist */,
 			);
 			path = "INS-UP";
+			sourceTree = "<group>";
+		};
+		DA77F6CC2377390600A7FC6C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1A2BF237D5075000E21DE /* MGothic_EB.otf */,
+				DAC1A2BE237D5075000E21DE /* MGothic_M.otf */,
+				DAC1A2C1237D5075000E21DE /* MGothic_R.otf */,
+				DAC1A2C0237D5075000E21DE /* MGothic_SB.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DAC1A2B2237D4A63000E21DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A0782376F3B10006CBCF /* Home.storyboard */,
+				DAC1A2B9237D4C98000E21DE /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DAC1A2B3237D4A70000E21DE /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A0762376F3390006CBCF /* Chat.storyboard */,
+				DAC1A2B5237D4A93000E21DE /* ViewController */,
+				DAC1A2B7237D4AB4000E21DE /* ChatETC */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		DAC1A2B4237D4A81000E21DE /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A07A2376F3C40006CBCF /* MyPage.storyboard */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		DAC1A2B5237D4A93000E21DE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A08323770B100006CBCF /* ChatMainViewController.swift */,
+				DAB7A0852377103E0006CBCF /* ChatRoomViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DAC1A2B7237D4AB4000E21DE /* ChatETC */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A0812377033D0006CBCF /* ChatManager.swift */,
+				DAB7A089237729DE0006CBCF /* ChatMessageCell.swift */,
+			);
+			path = ChatETC;
+			sourceTree = "<group>";
+		};
+		DAC1A2B9237D4C98000E21DE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1A2BA237D4CCD000E21DE /* HomeMainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DAC1A2C6237D50C0000E21DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A087237728560006CBCF /* ColorExtension.swift */,
+				DAC1A2BC237D4FAF000E21DE /* CALayerExtension.swift */,
+				DAC1A2C7237D50D4000E21DE /* FontExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA68387923642763004D07B0 /* Build configuration list for PBXNativeTarget "INS-UP" */;
 			buildPhases = (
+				5B9BA7D51B599FBA88B5D3AB /* [CP] Check Pods Manifest.lock */,
 				DA68386123642762004D07B0 /* Sources */,
 				DA68386223642762004D07B0 /* Frameworks */,
 				DA68386323642762004D07B0 /* Resources */,
+				AE5019080B42441AD5ABD21E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +312,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC1A2C3237D5076000E21DE /* MGothic_EB.otf in Resources */,
 				DA68387523642763004D07B0 /* LaunchScreen.storyboard in Resources */,
+				DAC1A2C4237D5076000E21DE /* MGothic_SB.otf in Resources */,
+				DAB7A07B2376F3C40006CBCF /* MyPage.storyboard in Resources */,
+				DAC1A2C5237D5076000E21DE /* MGothic_R.otf in Resources */,
+				DAB7A0792376F3B10006CBCF /* Home.storyboard in Resources */,
 				DA68387223642763004D07B0 /* Assets.xcassets in Resources */,
+				DAC1A2C2237D5076000E21DE /* MGothic_M.otf in Resources */,
+				DAB7A07F2376F4350006CBCF /* LoginSignup.storyboard in Resources */,
+				DAB7A0772376F3390006CBCF /* Chat.storyboard in Resources */,
+				DAB7A07D2376F41D0006CBCF /* Estimate.storyboard in Resources */,
 				DA68387023642762004D07B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B9BA7D51B599FBA88B5D3AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-INS-UP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE5019080B42441AD5ABD21E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA68386123642762004D07B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA68386D23642762004D07B0 /* ViewController.swift in Sources */,
+				DAF1C9FE2375B85300B3EF31 /* SocketIOManager.swift in Sources */,
+				DAB7A08A237729DE0006CBCF /* ChatMessageCell.swift in Sources */,
+				DAC1A2CA237D5399000E21DE /* MainTabbarController.swift in Sources */,
 				DA68386923642762004D07B0 /* AppDelegate.swift in Sources */,
+				DAB7A08423770B100006CBCF /* ChatMainViewController.swift in Sources */,
+				DAB7A0822377033D0006CBCF /* ChatManager.swift in Sources */,
+				DAC1A2BD237D4FAF000E21DE /* CALayerExtension.swift in Sources */,
 				DA68386B23642762004D07B0 /* SceneDelegate.swift in Sources */,
+				DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */,
+				DAB7A088237728560006CBCF /* ColorExtension.swift in Sources */,
+				DAC1A2BB237D4CCD000E21DE /* HomeMainViewController.swift in Sources */,
+				DAC1A2C8237D50D4000E21DE /* FontExtension.swift in Sources */,
+				DAB7A0862377103E0006CBCF /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +531,13 @@
 		};
 		DA68387A23642763004D07B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56771ACD9413B24BE47E1B1E /* Pods-INS-UP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MB894TP6V;
 				INFOPLIST_FILE = "INS-UP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +551,13 @@
 		};
 		DA68387B23642763004D07B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAECA275814FE9ED0EDB2907 /* Pods-INS-UP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MB894TP6V;
 				INFOPLIST_FILE = "INS-UP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

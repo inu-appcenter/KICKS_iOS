@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wu7-YT-VRw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--홈-->
+        <scene sceneID="AKl-rW-5Gk">
+            <objects>
+                <viewController id="wu7-YT-VRw" customClass="HomeMainViewController" customModule="INS_UP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ftE-h9-HTq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dah-bX-fmF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANe-lW-ACK">
+                                        <rect key="frame" x="181" y="12.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="ajJ-5m-1Bi">
+                                        <rect key="frame" x="231" y="20" width="8" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="8" id="3hA-6a-N0s"/>
+                                            <constraint firstAttribute="height" constant="5" id="72A-Gv-zPB"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ajJ-5m-1Bi" firstAttribute="centerY" secondItem="dah-bX-fmF" secondAttribute="centerY" id="SyN-Ea-WDo"/>
+                                    <constraint firstItem="ANe-lW-ACK" firstAttribute="centerX" secondItem="dah-bX-fmF" secondAttribute="centerX" constant="-5" id="gf7-xl-DHF"/>
+                                    <constraint firstItem="ajJ-5m-1Bi" firstAttribute="leading" secondItem="ANe-lW-ACK" secondAttribute="trailing" constant="8" id="kt0-gZ-dfq"/>
+                                    <constraint firstItem="ANe-lW-ACK" firstAttribute="centerY" secondItem="dah-bX-fmF" secondAttribute="centerY" id="pEQ-9s-Txz"/>
+                                    <constraint firstAttribute="height" constant="45" id="ufj-3F-4Y9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCz-1s-WxG">
+                                <rect key="frame" x="32" y="164" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GC-JU-qE5">
+                                <rect key="frame" x="32" y="184.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="913-AE-dIn">
+                                <rect key="frame" x="32" y="261" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="LzR-Ic-bq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6It-J3-0TC">
+                                <rect key="frame" x="32" y="371" width="350" height="359"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nnt-ML-R21">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="179.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSW-k6-c3e">
+                                                <rect key="frame" x="0.0" y="0.0" width="116.5" height="179.5"/>
+                                                <state key="normal" image="img_making"/>
+                                                <state key="selected" image="img_makingSel"/>
+                                                <state key="highlighted" image="img_makingSel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnc-kQ-iO3">
+                                                <rect key="frame" x="116.5" y="0.0" width="117" height="179.5"/>
+                                                <state key="normal" image="img_printing"/>
+                                                <state key="selected" image="img_printingSel"/>
+                                                <state key="highlighted" image="img_printingSel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atv-IJ-4rN">
+                                                <rect key="frame" x="233.5" y="0.0" width="116.5" height="179.5"/>
+                                                <state key="normal" image="img_nonMetal"/>
+                                                <state key="selected" image="img_nonMetalSel"/>
+                                                <state key="highlighted" image="img_nonMetalSel"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kJY-Pj-N0b">
+                                        <rect key="frame" x="0.0" y="179.5" width="350" height="179.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-st-ZmG">
+                                                <rect key="frame" x="0.0" y="0.0" width="116.5" height="179.5"/>
+                                                <state key="normal" image="img_metal"/>
+                                                <state key="selected" image="img_metalSel"/>
+                                                <state key="highlighted" image="img_metalSel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3m-f4-fG5">
+                                                <rect key="frame" x="116.5" y="0.0" width="117" height="179.5"/>
+                                                <state key="normal" image="img_silk"/>
+                                                <state key="selected" image="img_silkSel"/>
+                                                <state key="highlighted" image="img_silkSel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-Qr-FU5">
+                                                <rect key="frame" x="233.5" y="0.0" width="116.5" height="179.5"/>
+                                                <state key="normal" image="img_ETC"/>
+                                                <state key="selected" image="img_ETCSel"/>
+                                                <state key="highlighted" image="img_ETCSel"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="913-AE-dIn" firstAttribute="top" secondItem="3GC-JU-qE5" secondAttribute="bottom" constant="56" id="D4k-tv-HnZ"/>
+                            <constraint firstItem="lCz-1s-WxG" firstAttribute="top" secondItem="dah-bX-fmF" secondAttribute="bottom" constant="75" id="RSj-EW-wty"/>
+                            <constraint firstItem="6It-J3-0TC" firstAttribute="leading" secondItem="lCz-1s-WxG" secondAttribute="leading" id="Yvi-oA-akz"/>
+                            <constraint firstItem="3GC-JU-qE5" firstAttribute="leading" secondItem="lCz-1s-WxG" secondAttribute="leading" id="a8V-8E-Cfj"/>
+                            <constraint firstItem="pPY-fQ-IxJ" firstAttribute="bottom" secondItem="6It-J3-0TC" secondAttribute="bottom" constant="83" id="aDm-XG-J44"/>
+                            <constraint firstItem="6It-J3-0TC" firstAttribute="top" secondItem="913-AE-dIn" secondAttribute="bottom" constant="65" id="bCe-uk-BP1"/>
+                            <constraint firstItem="pPY-fQ-IxJ" firstAttribute="trailing" secondItem="dah-bX-fmF" secondAttribute="trailing" id="eRR-AY-Paw"/>
+                            <constraint firstItem="913-AE-dIn" firstAttribute="centerX" secondItem="ftE-h9-HTq" secondAttribute="centerX" id="ehJ-dl-O9x"/>
+                            <constraint firstItem="dah-bX-fmF" firstAttribute="leading" secondItem="pPY-fQ-IxJ" secondAttribute="leading" id="g4M-bf-072"/>
+                            <constraint firstItem="dah-bX-fmF" firstAttribute="top" secondItem="pPY-fQ-IxJ" secondAttribute="top" id="lNm-xa-vc3"/>
+                            <constraint firstItem="3GC-JU-qE5" firstAttribute="top" secondItem="lCz-1s-WxG" secondAttribute="bottom" id="sEq-hF-JuP"/>
+                            <constraint firstItem="lCz-1s-WxG" firstAttribute="leading" secondItem="pPY-fQ-IxJ" secondAttribute="leading" constant="32" id="tTg-Ra-GPq"/>
+                            <constraint firstItem="6It-J3-0TC" firstAttribute="centerX" secondItem="ftE-h9-HTq" secondAttribute="centerX" id="xko-rf-iRu"/>
+                            <constraint firstItem="913-AE-dIn" firstAttribute="leading" secondItem="lCz-1s-WxG" secondAttribute="leading" id="zCi-zi-F04"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pPY-fQ-IxJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="ic_homeTab" id="4RK-sV-cjv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="companyNameLabel" destination="ANe-lW-ACK" id="n1k-k1-BNi"/>
+                        <outlet property="etcButton" destination="2X8-Qr-FU5" id="7gV-75-O6M"/>
+                        <outlet property="makingButton" destination="VSW-k6-c3e" id="cw5-B8-11g"/>
+                        <outlet property="metalButton" destination="vyR-st-ZmG" id="ig0-SX-noq"/>
+                        <outlet property="nonMetalButton" destination="Atv-IJ-4rN" id="pjV-gq-TEd"/>
+                        <outlet property="printingButton" destination="Pnc-kQ-iO3" id="Wdc-po-fsn"/>
+                        <outlet property="searchTextField" destination="913-AE-dIn" id="k38-WR-qbO"/>
+                        <outlet property="silkButton" destination="x3m-f4-fG5" id="1P9-RN-GNa"/>
+                        <outlet property="titleLabelOne" destination="lCz-1s-WxG" id="b6U-ek-VCn"/>
+                        <outlet property="titleLabelTwo" destination="3GC-JU-qE5" id="JuY-GG-bkW"/>
+                        <outlet property="topContainerView" destination="dah-bX-fmF" id="YPN-xW-1K6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bq-bt-JUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_arrowDown" width="8.5" height="5"/>
+        <image name="ic_homeTab" width="25" height="25"/>
+        <image name="img_ETC" width="53" height="82.5"/>
+        <image name="img_ETCSel" width="53" height="82.5"/>
+        <image name="img_making" width="35" height="82"/>
+        <image name="img_makingSel" width="35" height="82"/>
+        <image name="img_metal" width="30" height="82.5"/>
+        <image name="img_metalSel" width="30" height="82.5"/>
+        <image name="img_nonMetal" width="44" height="82"/>
+        <image name="img_nonMetalSel" width="44" height="82"/>
+        <image name="img_printing" width="50.5" height="82"/>
+        <image name="img_printingSel" width="50.5" height="82"/>
+        <image name="img_silk" width="35" height="80.5"/>
+        <image name="img_silkSel" width="35" height="80.5"/>
+    </resources>
+</document>
