@@ -29,4 +29,11 @@ extension UIColor {
         static let red: UIColor = UIColor.init(ored: 255, ogreen: 63, oblue: 61, alpha: 1)
     }
     
+    static var random: UIColor {
+        return UIColor(red: .random(in: 0.2...0.7),
+                       green: .random(in: 0.2...0.7),
+                       blue: .random(in: 0.2...0.7),
+                       alpha: 1.0)
+    }
+    
 }

@@ -22,6 +22,8 @@
 		DA68387023642762004D07B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA68386E23642762004D07B0 /* Main.storyboard */; };
 		DA68387223642763004D07B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA68387123642763004D07B0 /* Assets.xcassets */; };
 		DA68387523642763004D07B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA68387323642763004D07B0 /* LaunchScreen.storyboard */; };
+		DA733F7D237E681E009C2517 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733F7C237E681E009C2517 /* BarChart.swift */; };
+		DA733F7F237E7D15009C2517 /* EstimateMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733F7E237E7D15009C2517 /* EstimateMainViewController.swift */; };
 		DAB7A0772376F3390006CBCF /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0762376F3390006CBCF /* Chat.storyboard */; };
 		DAB7A0792376F3B10006CBCF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0782376F3B10006CBCF /* Home.storyboard */; };
 		DAB7A07B2376F3C40006CBCF /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A07A2376F3C40006CBCF /* MyPage.storyboard */; };
@@ -63,6 +65,8 @@
 		DA68387123642763004D07B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA68387423642763004D07B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA68387623642763004D07B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA733F7C237E681E009C2517 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		DA733F7E237E7D15009C2517 /* EstimateMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateMainViewController.swift; sourceTree = "<group>"; };
 		DAB7A0762376F3390006CBCF /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		DAB7A0782376F3B10006CBCF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DAB7A07A2376F3C40006CBCF /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				DAB7A07C2376F41D0006CBCF /* Estimate.storyboard */,
+				DA733F80237E7D1D009C2517 /* ViewController */,
+				DA733F81237E7D25009C2517 /* ETC */,
 			);
 			path = Estimate;
 			sourceTree = "<group>";
@@ -208,6 +214,22 @@
 				DA68387623642763004D07B0 /* Info.plist */,
 			);
 			path = "INS-UP";
+			sourceTree = "<group>";
+		};
+		DA733F80237E7D1D009C2517 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA733F7E237E7D15009C2517 /* EstimateMainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA733F81237E7D25009C2517 /* ETC */ = {
+			isa = PBXGroup;
+			children = (
+				DA733F7C237E681E009C2517 /* BarChart.swift */,
+			);
+			path = ETC;
 			sourceTree = "<group>";
 		};
 		DA77F6CC2377390600A7FC6C /* Fonts */ = {
@@ -421,9 +443,11 @@
 				DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */,
 				0E7A20E0237DC52100B8BB2E /* RegisterCEONameViewController.swift in Sources */,
 				DAB7A088237728560006CBCF /* ColorExtension.swift in Sources */,
+				DA733F7F237E7D15009C2517 /* EstimateMainViewController.swift in Sources */,
 				DAC1A2BB237D4CCD000E21DE /* HomeMainViewController.swift in Sources */,
 				0E7A20DF237DC52100B8BB2E /* AddressTableViewCell.swift in Sources */,
 				DAC1A2C8237D50D4000E21DE /* FontExtension.swift in Sources */,
+				DA733F7D237E681E009C2517 /* BarChart.swift in Sources */,
 				DAB7A0862377103E0006CBCF /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
