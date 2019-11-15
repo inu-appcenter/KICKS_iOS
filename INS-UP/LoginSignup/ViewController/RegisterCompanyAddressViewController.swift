@@ -28,6 +28,11 @@ class RegisterCompanyAddressViewController: UIViewController {
         }
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -79,15 +84,10 @@ class RegisterCompanyAddressViewController: UIViewController {
                                     let finall = final as! NSDictionary
                                     //print(final)
                                     let roadAddr = finall["roadAddr"] as? String ?? ""
+                                    let roadAddrPart1 = finall["roadAddrPart1"] as? String ?? ""
                                     let jibunAddr = finall["jibunAddr"] as? String ?? ""
-                                    let admCd = finall["admCd"] as? String ?? ""
-                                    let rnMgtSn = finall["rnMgtSn"] as? String ?? ""
-                                    let bdMgtSn = finall["bdMgtSn"] as? String ?? ""
-                                    let udrtYn = finall["udrtYn"] as? String ?? ""
-                                    let buldMnnm = finall["buldMnnm"] as? String ?? ""
-                                    let buldSlno = finall["buldSlno"] as? String ?? ""
                                     
-                                    let obj = JusoSearch.init(roadAddr: roadAddr, jibunAddr: jibunAddr, admCd: admCd, rnMgtSn: rnMgtSn, bdMgtSn: bdMgtSn, udrtYn: udrtYn, buldMnnm: buldMnnm, buldSlno: buldSlno)
+                                    let obj = JusoSearch.init(roadAddr: roadAddr, roadAddrPart1: roadAddrPart1, jibunAddr: jibunAddr)
                                     jusoTemp.append(obj)
                                 }
                             }
@@ -127,7 +127,7 @@ extension RegisterCompanyAddressViewController: UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = addressTableView.dequeueReusableCell(withIdentifier: "AddressTableViewCell") as? AddressTableViewCell else { return UITableViewCell() }
         
-        cell.addressImageView.image = UIImage.init(named: "location")
+        cell.addressImageView.image = UIImage.init(named: "ic_location")
         cell.address1Label.text = jusoList[indexPath.row].jibunAddr
         cell.address1Label.font = UIFont.MGothic(type: .r, size: 16)
         cell.address2Label.text = "[도로명] " + jusoList[indexPath.row].roadAddr!
@@ -139,7 +139,13 @@ extension RegisterCompanyAddressViewController: UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print("qwer")
         
-        print(jusoList[indexPath.row].rnMgtSn!)
+        //print(jusoList[indexPath.row].rnMgtSn!)
+        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterDetailAddressViewController") as? RegisterDetailAddressViewController else {return}
+        vc.roadAddr = jusoList[indexPath.row].roadAddr
+        vc.roadAddrPart1 = jusoList[indexPath.row].roadAddrPart1
+        vc.jibunAddr = jusoList[indexPath.row].jibunAddr
+        self.navigationController?.show(vc, sender: nil)
     }
     
 }

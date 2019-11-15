@@ -38,6 +38,11 @@ class RegisterCompanyFieldViewController: UIViewController {
         self.navigationController?.show(vc, sender: nil)
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

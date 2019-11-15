@@ -9,7 +9,7 @@
 import UIKit
 
 class RegisterCompanyNameViewController: UIViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var companyNameTextField: UITextField!
     
@@ -19,6 +19,10 @@ class RegisterCompanyNameViewController: UIViewController {
         self.navigationController?.show(vc, sender: nil)
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
