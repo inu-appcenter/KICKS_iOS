@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E69129B237DE16C00B5BD49 /* jusoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69129A237DE16C00B5BD49 /* jusoManager.swift */; };
+		0E7A20D7237DC51100B8BB2E /* RegisterCompany.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7A20D6237DC51100B8BB2E /* RegisterCompany.storyboard */; };
+		0E7A20DE237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20D8237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift */; };
+		0E7A20DF237DC52100B8BB2E /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20D9237DC52100B8BB2E /* AddressTableViewCell.swift */; };
+		0E7A20E0237DC52100B8BB2E /* RegisterCEONameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DA237DC52100B8BB2E /* RegisterCEONameViewController.swift */; };
+		0E7A20E1237DC52100B8BB2E /* RegisterDetailAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DB237DC52100B8BB2E /* RegisterDetailAddressViewController.swift */; };
+		0E7A20E2237DC52100B8BB2E /* RegisterCompanyNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DC237DC52100B8BB2E /* RegisterCompanyNameViewController.swift */; };
+		0E7A20E3237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DD237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift */; };
 		510A05808693E090F8D91F70 /* Pods_INS_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */; };
 		DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */; };
 		DA68386923642762004D07B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68386823642762004D07B0 /* AppDelegate.swift */; };
@@ -36,6 +44,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E69129A237DE16C00B5BD49 /* jusoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jusoManager.swift; sourceTree = "<group>"; };
+		0E7A20D6237DC51100B8BB2E /* RegisterCompany.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterCompany.storyboard; sourceTree = "<group>"; };
+		0E7A20D8237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCompanyAddressViewController.swift; sourceTree = "<group>"; };
+		0E7A20D9237DC52100B8BB2E /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		0E7A20DA237DC52100B8BB2E /* RegisterCEONameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCEONameViewController.swift; sourceTree = "<group>"; };
+		0E7A20DB237DC52100B8BB2E /* RegisterDetailAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterDetailAddressViewController.swift; sourceTree = "<group>"; };
+		0E7A20DC237DC52100B8BB2E /* RegisterCompanyNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCompanyNameViewController.swift; sourceTree = "<group>"; };
+		0E7A20DD237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCompanyFieldViewController.swift; sourceTree = "<group>"; };
 		4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INS_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56771ACD9413B24BE47E1B1E /* Pods-INS-UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.debug.xcconfig"; sourceTree = "<group>"; };
 		CAECA275814FE9ED0EDB2907 /* Pods-INS-UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.release.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E691299237DE11F00B5BD49 /* SignUpETC */ = {
+			isa = PBXGroup;
+			children = (
+				0E7A20D9237DC52100B8BB2E /* AddressTableViewCell.swift */,
+				0E69129A237DE16C00B5BD49 /* jusoManager.swift */,
+			);
+			path = SignUpETC;
+			sourceTree = "<group>";
+		};
 		659A7A9F5232A7B3C6D4FA1D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				DAB7A07E2376F4350006CBCF /* LoginSignup.storyboard */,
+				0E7A20D6237DC51100B8BB2E /* RegisterCompany.storyboard */,
 				DA5DA46A237DB5180005FB8B /* ViewController */,
+				0E691299237DE11F00B5BD49 /* SignUpETC */,
 			);
 			path = LoginSignup;
 			sourceTree = "<group>";
@@ -135,6 +162,11 @@
 			isa = PBXGroup;
 			children = (
 				DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */,
+				0E7A20DC237DC52100B8BB2E /* RegisterCompanyNameViewController.swift */,
+				0E7A20DD237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift */,
+				0E7A20DA237DC52100B8BB2E /* RegisterCEONameViewController.swift */,
+				0E7A20D8237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift */,
+				0E7A20DB237DC52100B8BB2E /* RegisterDetailAddressViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -263,7 +295,7 @@
 				DA68386123642762004D07B0 /* Sources */,
 				DA68386223642762004D07B0 /* Frameworks */,
 				DA68386323642762004D07B0 /* Resources */,
-				AE5019080B42441AD5ABD21E /* [CP] Embed Pods Frameworks */,
+				181F03D3D984B27DA619E3B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +347,7 @@
 				DAC1A2C3237D5076000E21DE /* MGothic_EB.otf in Resources */,
 				DA68387523642763004D07B0 /* LaunchScreen.storyboard in Resources */,
 				DAC1A2C4237D5076000E21DE /* MGothic_SB.otf in Resources */,
+				0E7A20D7237DC51100B8BB2E /* RegisterCompany.storyboard in Resources */,
 				DAB7A07B2376F3C40006CBCF /* MyPage.storyboard in Resources */,
 				DAC1A2C5237D5076000E21DE /* MGothic_R.otf in Resources */,
 				DAB7A0792376F3B10006CBCF /* Home.storyboard in Resources */,
@@ -330,6 +363,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		181F03D3D984B27DA619E3B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-INS-UP/Pods-INS-UP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-INS-UP/Pods-INS-UP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-INS-UP/Pods-INS-UP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B9BA7D51B599FBA88B5D3AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,28 +398,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE5019080B42441AD5ABD21E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -377,17 +405,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7A20E3237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift in Sources */,
 				DAF1C9FE2375B85300B3EF31 /* SocketIOManager.swift in Sources */,
 				DAB7A08A237729DE0006CBCF /* ChatMessageCell.swift in Sources */,
+				0E7A20E1237DC52100B8BB2E /* RegisterDetailAddressViewController.swift in Sources */,
 				DAC1A2CA237D5399000E21DE /* MainTabbarController.swift in Sources */,
 				DA68386923642762004D07B0 /* AppDelegate.swift in Sources */,
 				DAB7A08423770B100006CBCF /* ChatMainViewController.swift in Sources */,
 				DAB7A0822377033D0006CBCF /* ChatManager.swift in Sources */,
+				0E69129B237DE16C00B5BD49 /* jusoManager.swift in Sources */,
+				0E7A20DE237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift in Sources */,
+				0E7A20E2237DC52100B8BB2E /* RegisterCompanyNameViewController.swift in Sources */,
 				DAC1A2BD237D4FAF000E21DE /* CALayerExtension.swift in Sources */,
 				DA68386B23642762004D07B0 /* SceneDelegate.swift in Sources */,
 				DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */,
+				0E7A20E0237DC52100B8BB2E /* RegisterCEONameViewController.swift in Sources */,
 				DAB7A088237728560006CBCF /* ColorExtension.swift in Sources */,
 				DAC1A2BB237D4CCD000E21DE /* HomeMainViewController.swift in Sources */,
+				0E7A20DF237DC52100B8BB2E /* AddressTableViewCell.swift in Sources */,
 				DAC1A2C8237D50D4000E21DE /* FontExtension.swift in Sources */,
 				DAB7A0862377103E0006CBCF /* ChatRoomViewController.swift in Sources */,
 			);

@@ -46,13 +46,15 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>LoginSignup</string>
+					<string>RegisterCompany</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 	<key>UIMainStoryboardFile</key>
 	<string>LoginSignup</string>
 	<key>UIRequiredDeviceCapabilities</key>
