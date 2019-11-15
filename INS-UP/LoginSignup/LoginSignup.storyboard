@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="42" id="Mwz-OM-RgP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1K-Qi-y9S">
                                 <rect key="frame" x="32" y="772" width="350" height="43"/>
@@ -52,6 +52,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vr-dq-B0B">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="signupTapped:" destination="5c1-VD-2Ua" eventType="touchUpInside" id="5hw-0I-688"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO1-cx-odm">
                                         <rect key="frame" x="157" y="0.0" width="157" height="30"/>
@@ -65,6 +68,9 @@
                                     <constraint firstAttribute="height" constant="43" id="lKg-9c-2Mv"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="5c1-VD-2Ua" eventType="touchUpInside" id="n2J-xc-wZu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92129063609999995" green="0.31425765160000002" blue="0.2783041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

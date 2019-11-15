@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 import Alamofire
 
-class RegisterDetailAddressViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class RegisterDetailAddressViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UITextFieldDelegate {
 
     var roadAddr: String?
     var roadAddrPart1: String?
@@ -26,6 +26,7 @@ class RegisterDetailAddressViewController: UIViewController, MKMapViewDelegate, 
     @IBOutlet weak var jibunLabel: UILabel!
     @IBOutlet weak var roadLabel: UILabel!
     @IBOutlet weak var detailTextField: UITextField!
+    @IBOutlet weak var mapHeight: NSLayoutConstraint!
     
     var addrLat: Double?
     var addrLon: Double?
@@ -36,6 +37,7 @@ class RegisterDetailAddressViewController: UIViewController, MKMapViewDelegate, 
     
     @IBOutlet weak var nextButton: UIButton!
     @IBAction func nextButtonClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -47,15 +49,17 @@ class RegisterDetailAddressViewController: UIViewController, MKMapViewDelegate, 
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        addNoti()
         titleLabel.font = UIFont.MGothic(type: .r, size: 20)
         jibunLabel.text = jibunAddr!
         jibunLabel.font = UIFont.MGothic(type: .r, size: 16)
         roadLabel.text = "[도로명] " + roadAddr!
         roadLabel.font = UIFont.MGothic(type: .r, size: 12)
         detailTextField.font = UIFont.MGothic(type: .r, size: 16)
+        nextButton.setTitle("완료", for: .normal)
         nextButton.layer.cornerRadius = 22
         nextButton.titleLabel?.font = UIFont.MGothic(type: .m, size: 14)
+        detailTextField.delegate = self
         
         let url = "https://dapi.kakao.com/v2/local/search/address.json"
         let param: [String : Any] =   [ "query" : roadAddrPart1!]
@@ -107,14 +111,38 @@ class RegisterDetailAddressViewController: UIViewController, MKMapViewDelegate, 
         mapView.setRegion(region, animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    lazy var tapGesture: UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapped(_:)))
+        return tap
+    }()
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
     }
-    */
+    
+    func addNoti() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        self.view.addGestureRecognizer(tapGesture)
+        mapHeight.constant = 0
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        mapHeight.constant = 272
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @objc func tapped(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        self.view.removeGestureRecognizer(tapGesture)
+    }
 
 }

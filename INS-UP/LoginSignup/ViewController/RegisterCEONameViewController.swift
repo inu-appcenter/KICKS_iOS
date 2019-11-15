@@ -8,12 +8,18 @@
 
 import UIKit
 
-class RegisterCEONameViewController: UIViewController {
+class RegisterCEONameViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var ceoNameTextField: UITextField!
     
     @IBOutlet weak var nextButton: UIButton!
+    
+    lazy var tapGesture: UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapped(_:)))
+        return tap
+    }()
+    
     @IBAction func nextButtonClicked(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterPhoneNumberViewController") as? RegisterPhoneNumberViewController else { return }
         self.navigationController?.show(vc, sender: nil)
@@ -34,17 +40,32 @@ class RegisterCEONameViewController: UIViewController {
         ceoNameTextField.text = ""
         nextButton.layer.cornerRadius = 22
         nextButton.titleLabel?.font = UIFont.MGothic(type: .m, size: 14)
+        ceoNameTextField.delegate = self
+        
+        addNoti()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
     }
-    */
+    
+    func addNoti() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+    }
+    
+    @objc func tapped(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        self.view.removeGestureRecognizer(tapGesture)
+    }
 
 }

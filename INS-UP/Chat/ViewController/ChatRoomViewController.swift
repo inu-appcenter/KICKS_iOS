@@ -30,7 +30,14 @@ class ChatRoomViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    let chatManager = ChatMananger(userName: "Choy")
+    let chatManager: ChatMananger = {
+        guard let name = UserManager.manager.getUserName() else {
+            return ChatMananger(userName: "Choy")
+        }
+        
+        return ChatMananger(userName: name)
+    }()
+    
     let cellID = "Chat"
         
     lazy var tapGesture: UITapGestureRecognizer = {

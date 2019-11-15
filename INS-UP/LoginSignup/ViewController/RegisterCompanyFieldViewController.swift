@@ -77,6 +77,7 @@ class RegisterCompanyFieldViewController: UIViewController {
         
         nextButton.layer.cornerRadius = 22
         nextButton.titleLabel?.font = UIFont.MGothic(type: .m, size: 14)
+        
     }
     
     @IBAction func radioClicked(_ sender: UIButton) {

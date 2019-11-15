@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class RegisterCompanyAddressViewController: UIViewController {
+class RegisterCompanyAddressViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var selectLabel: UILabel!
@@ -51,6 +51,8 @@ class RegisterCompanyAddressViewController: UIViewController {
         addressTableView.rowHeight = 80
         addressTableView.dataSource = self
         addressTableView.delegate = self
+        
+        searchTextField.delegate = self
     }
     
     @IBAction func searchTextFieldDidEndOnExit(_ sender: Any) {
@@ -103,15 +105,82 @@ class RegisterCompanyAddressViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    lazy var tapGesture: UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapped(_:)))
+        return tap
+    }()
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        
+        selectLabel.isHidden = false
+        str = searchTextField.text
+        
+        let url = "http://www.juso.go.kr/addrlink/addrLinkApi.do"
+        let param: [String : Any] =   [ "confmKey" : "devU01TX0FVVEgyMDE5MTExNTA0MzcxMDEwOTE5NTI=",
+                                        "currentPage" : 1,
+                                        "countPerPage" : 100,
+                                        "keyword" : str ?? "",
+                                        "resultType" : "json"]
+        AF.request(url, method: .post, parameters: param, encoding: URLEncoding.httpBody, headers: [:]).responseJSON { response in
+            switch response.result {
+            case .success(let item):
+                // totalCount, errorCode, errorMessage
+                // jibunAddr, roadAddr
+            
+                //print(item)
+                var jusoTemp: [JusoSearch] = []
+                
+                if let i = item as? NSDictionary {
+                    for j in i{
+                        if let k = j.value as? NSDictionary {
+                            if let m = k["common"] as? NSDictionary {
+                                self.searchCount = (m["totalCount"] as? NSString ?? "").integerValue
+                                //print(self.searchCount)
+                            }
+                            if let n = k["juso"] as? NSArray {
+                                for final in n {
+                                    let finall = final as! NSDictionary
+                                    //print(final)
+                                    let roadAddr = finall["roadAddr"] as? String ?? ""
+                                    let roadAddrPart1 = finall["roadAddrPart1"] as? String ?? ""
+                                    let jibunAddr = finall["jibunAddr"] as? String ?? ""
+                                    
+                                    let obj = JusoSearch.init(roadAddr: roadAddr, roadAddrPart1: roadAddrPart1, jibunAddr: jibunAddr)
+                                    jusoTemp.append(obj)
+                                }
+                            }
+                        }
+                    }
+                }
+                self.jusoList = jusoTemp
+                
+                break
+            case let .failure(error):
+                print(error)
+            }
+        }
+        
+        return true
     }
-    */
+    
+    func addNoti() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+    }
+    
+    @objc func tapped(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        self.view.removeGestureRecognizer(tapGesture)
+    }
 
 }
 

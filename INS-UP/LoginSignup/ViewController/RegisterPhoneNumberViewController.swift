@@ -8,13 +8,19 @@
 
 import UIKit
 
-class RegisterPhoneNumberViewController: UIViewController {
+class RegisterPhoneNumberViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var numberTextField: UITextField!
     @IBOutlet weak var numLabel: UILabel!
     
     @IBOutlet weak var nextButton: UIButton!
+    
+    lazy var tapGesture: UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapped(_:)))
+        return tap
+    }()
+    
     @IBAction func nextButtonClicked(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterCompanyAddressViewController") as? RegisterCompanyAddressViewController else { return }
         self.navigationController?.show(vc, sender: nil)
@@ -33,20 +39,36 @@ class RegisterPhoneNumberViewController: UIViewController {
         titleLabel.font = UIFont.MGothic(type: .r, size: 20)
         numberTextField.font = UIFont.MGothic(type: .r, size: 20)
         numberTextField.text = ""
+        numberTextField.delegate = self
+        numberTextField.keyboardType = .numberPad
         numLabel.font = UIFont.MGothic(type: .r, size: 10)
         nextButton.layer.cornerRadius = 22
         nextButton.titleLabel?.font = UIFont.MGothic(type: .m, size: 14)
+        
+        addNoti()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
     }
-    */
+    
+    func addNoti() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+    }
+    
+    @objc func tapped(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        self.view.removeGestureRecognizer(tapGesture)
+    }
 
 }

@@ -34,6 +34,13 @@ class HomeMainViewController: UIViewController {
         super.viewDidLoad()
         setVisualDesigns()
         addNoti()
+        if let userName = UserManager.manager.getUserName() {
+            if userName == "admin01" {
+                let vc = UIStoryboard(name: "RegisterCompany", bundle: nil).instantiateViewController(withIdentifier: "RegisterNav")
+                       vc.modalPresentationStyle = .fullScreen
+                       self.present(vc, animated: true, completion: nil)
+            }
+        }
         // Do any additional setup after loading the view.
     }
     

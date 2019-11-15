@@ -19,9 +19,13 @@ class RegisterStartViewController: UIViewController {
         self.navigationController?.show(vc, sender: nil)
     }
     
+    @IBAction func backTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .white
         // Do any additional setup after loading the view.
         
         welcomeLable.font = UIFont.MGothic(type: .sb, size: 22)
@@ -37,16 +41,5 @@ class RegisterStartViewController: UIViewController {
         registerButton.layer.cornerRadius = 22
         registerButton.titleLabel?.font = UIFont.MGothic(type: .m, size: 14)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
