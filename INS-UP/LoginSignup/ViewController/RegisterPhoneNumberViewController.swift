@@ -1,21 +1,22 @@
 //
-//  RegisterCEONameViewController.swift
-//  InsUp
+//  RegisterPhoneNumberViewController.swift
+//  INS-UP
 //
-//  Created by 김성은 on 12/11/2019.
-//  Copyright © 2019 김성은. All rights reserved.
+//  Created by 김성은 on 15/11/2019.
+//  Copyright © 2019 Cho. All rights reserved.
 //
 
 import UIKit
 
-class RegisterCEONameViewController: UIViewController {
+class RegisterPhoneNumberViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var ceoNameTextField: UITextField!
+    @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var numLabel: UILabel!
     
     @IBOutlet weak var nextButton: UIButton!
     @IBAction func nextButtonClicked(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterPhoneNumberViewController") as? RegisterPhoneNumberViewController else { return }
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterCompanyAddressViewController") as? RegisterCompanyAddressViewController else { return }
         self.navigationController?.show(vc, sender: nil)
     }
     
@@ -30,8 +31,9 @@ class RegisterCEONameViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         titleLabel.font = UIFont.MGothic(type: .r, size: 20)
-        ceoNameTextField.font = UIFont.MGothic(type: .r, size: 20)
-        ceoNameTextField.text = ""
+        numberTextField.font = UIFont.MGothic(type: .r, size: 20)
+        numberTextField.text = ""
+        numLabel.font = UIFont.MGothic(type: .r, size: 10)
         nextButton.layer.cornerRadius = 22
         nextButton.titleLabel?.font = UIFont.MGothic(type: .m, size: 14)
     }

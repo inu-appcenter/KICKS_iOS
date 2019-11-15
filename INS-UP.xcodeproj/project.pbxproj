@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E49DD41237E7CE3007D9F43 /* RegisterPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49DD40237E7CE3007D9F43 /* RegisterPhoneNumberViewController.swift */; };
 		0E69129B237DE16C00B5BD49 /* jusoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69129A237DE16C00B5BD49 /* jusoManager.swift */; };
 		0E7A20D7237DC51100B8BB2E /* RegisterCompany.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7A20D6237DC51100B8BB2E /* RegisterCompany.storyboard */; };
 		0E7A20DE237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20D8237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift */; };
@@ -15,6 +16,7 @@
 		0E7A20E1237DC52100B8BB2E /* RegisterDetailAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DB237DC52100B8BB2E /* RegisterDetailAddressViewController.swift */; };
 		0E7A20E2237DC52100B8BB2E /* RegisterCompanyNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DC237DC52100B8BB2E /* RegisterCompanyNameViewController.swift */; };
 		0E7A20E3237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DD237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift */; };
+		0EAA1AFC237ECEEA0049C0B0 /* RegisterStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA1AFB237ECEEA0049C0B0 /* RegisterStartViewController.swift */; };
 		510A05808693E090F8D91F70 /* Pods_INS_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */; };
 		DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */; };
 		DA68386923642762004D07B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68386823642762004D07B0 /* AppDelegate.swift */; };
@@ -46,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E49DD40237E7CE3007D9F43 /* RegisterPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		0E69129A237DE16C00B5BD49 /* jusoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jusoManager.swift; sourceTree = "<group>"; };
 		0E7A20D6237DC51100B8BB2E /* RegisterCompany.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterCompany.storyboard; sourceTree = "<group>"; };
 		0E7A20D8237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCompanyAddressViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		0E7A20DB237DC52100B8BB2E /* RegisterDetailAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterDetailAddressViewController.swift; sourceTree = "<group>"; };
 		0E7A20DC237DC52100B8BB2E /* RegisterCompanyNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCompanyNameViewController.swift; sourceTree = "<group>"; };
 		0E7A20DD237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCompanyFieldViewController.swift; sourceTree = "<group>"; };
+		0EAA1AFB237ECEEA0049C0B0 /* RegisterStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStartViewController.swift; sourceTree = "<group>"; };
 		4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INS_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56771ACD9413B24BE47E1B1E /* Pods-INS-UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.debug.xcconfig"; sourceTree = "<group>"; };
 		CAECA275814FE9ED0EDB2907 /* Pods-INS-UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.release.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,9 +172,11 @@
 			isa = PBXGroup;
 			children = (
 				DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */,
+				0EAA1AFB237ECEEA0049C0B0 /* RegisterStartViewController.swift */,
 				0E7A20DC237DC52100B8BB2E /* RegisterCompanyNameViewController.swift */,
 				0E7A20DD237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift */,
 				0E7A20DA237DC52100B8BB2E /* RegisterCEONameViewController.swift */,
+				0E49DD40237E7CE3007D9F43 /* RegisterPhoneNumberViewController.swift */,
 				0E7A20D8237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift */,
 				0E7A20DB237DC52100B8BB2E /* RegisterDetailAddressViewController.swift */,
 			);
@@ -435,6 +441,7 @@
 				DA68386923642762004D07B0 /* AppDelegate.swift in Sources */,
 				DAB7A08423770B100006CBCF /* ChatMainViewController.swift in Sources */,
 				DAB7A0822377033D0006CBCF /* ChatManager.swift in Sources */,
+				0EAA1AFC237ECEEA0049C0B0 /* RegisterStartViewController.swift in Sources */,
 				0E69129B237DE16C00B5BD49 /* jusoManager.swift in Sources */,
 				0E7A20DE237DC52100B8BB2E /* RegisterCompanyAddressViewController.swift in Sources */,
 				0E7A20E2237DC52100B8BB2E /* RegisterCompanyNameViewController.swift in Sources */,
@@ -442,6 +449,7 @@
 				DA68386B23642762004D07B0 /* SceneDelegate.swift in Sources */,
 				DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */,
 				0E7A20E0237DC52100B8BB2E /* RegisterCEONameViewController.swift in Sources */,
+				0E49DD41237E7CE3007D9F43 /* RegisterPhoneNumberViewController.swift in Sources */,
 				DAB7A088237728560006CBCF /* ColorExtension.swift in Sources */,
 				DA733F7F237E7D15009C2517 /* EstimateMainViewController.swift in Sources */,
 				DAC1A2BB237D4CCD000E21DE /* HomeMainViewController.swift in Sources */,
