@@ -10,7 +10,7 @@
         <!--Main Tabbar Controller-->
         <scene sceneID="p1T-HI-le2">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uVL-p0-Oge" customClass="MainTabbarController" customModule="INS_UP" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabbar" automaticallyAdjustsScrollViewInsets="NO" id="uVL-p0-Oge" customClass="MainTabbarController" customModule="INS_UP" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HqC-CI-8nL">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -23,6 +23,25 @@ class LoginMainViewController: UIViewController {
         return tap
     }()
     
+    @IBAction func signupTapped(_ sender: Any) {
+       
+    }
+    
+    @IBAction func loginTapped(_ sender: Any) {
+        if let name = idTextField.text {
+            UserManager.manager.setUserName(name)
+            if name == "admin01" {
+                UserManager.manager.setUserType(.order)
+            } else {
+                UserManager.manager.setUserType(.product)
+            }
+        }
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabbar")
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
+    }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         if #available(iOS 13.0, *) {
             return .lightContent

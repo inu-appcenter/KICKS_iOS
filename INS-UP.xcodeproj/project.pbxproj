@@ -18,6 +18,8 @@
 		0E7A20E3237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A20DD237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift */; };
 		0EAA1AFC237ECEEA0049C0B0 /* RegisterStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA1AFB237ECEEA0049C0B0 /* RegisterStartViewController.swift */; };
 		510A05808693E090F8D91F70 /* Pods_INS_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */; };
+		DA249D26237EF61100C0CC32 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA249D25237EF61100C0CC32 /* UserManager.swift */; };
+		DA249D28237F172400C0CC32 /* EstimateCompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA249D27237F172400C0CC32 /* EstimateCompareViewController.swift */; };
 		DA5DA469237DB5120005FB8B /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */; };
 		DA68386923642762004D07B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68386823642762004D07B0 /* AppDelegate.swift */; };
 		DA68386B23642762004D07B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68386A23642762004D07B0 /* SceneDelegate.swift */; };
@@ -61,6 +63,8 @@
 		4517DD33FFA8A9A0912C93CC /* Pods_INS_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INS_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56771ACD9413B24BE47E1B1E /* Pods-INS-UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.debug.xcconfig"; sourceTree = "<group>"; };
 		CAECA275814FE9ED0EDB2907 /* Pods-INS-UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INS-UP.release.xcconfig"; path = "Pods/Target Support Files/Pods-INS-UP/Pods-INS-UP.release.xcconfig"; sourceTree = "<group>"; };
+		DA249D25237EF61100C0CC32 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		DA249D27237F172400C0CC32 /* EstimateCompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateCompareViewController.swift; sourceTree = "<group>"; };
 		DA5DA468237DB5120005FB8B /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
 		DA68386523642762004D07B0 /* INS-UP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "INS-UP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA68386823642762004D07B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 				DA68387123642763004D07B0 /* Assets.xcassets */,
 				DA68387323642763004D07B0 /* LaunchScreen.storyboard */,
 				DA68387623642763004D07B0 /* Info.plist */,
+				DA249D25237EF61100C0CC32 /* UserManager.swift */,
 			);
 			path = "INS-UP";
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				DA733F7E237E7D15009C2517 /* EstimateMainViewController.swift */,
+				DA249D27237F172400C0CC32 /* EstimateCompareViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -435,6 +441,7 @@
 			files = (
 				0E7A20E3237DC52100B8BB2E /* RegisterCompanyFieldViewController.swift in Sources */,
 				DAF1C9FE2375B85300B3EF31 /* SocketIOManager.swift in Sources */,
+				DA249D28237F172400C0CC32 /* EstimateCompareViewController.swift in Sources */,
 				DAB7A08A237729DE0006CBCF /* ChatMessageCell.swift in Sources */,
 				0E7A20E1237DC52100B8BB2E /* RegisterDetailAddressViewController.swift in Sources */,
 				DAC1A2CA237D5399000E21DE /* MainTabbarController.swift in Sources */,
@@ -451,6 +458,7 @@
 				0E7A20E0237DC52100B8BB2E /* RegisterCEONameViewController.swift in Sources */,
 				0E49DD41237E7CE3007D9F43 /* RegisterPhoneNumberViewController.swift in Sources */,
 				DAB7A088237728560006CBCF /* ColorExtension.swift in Sources */,
+				DA249D26237EF61100C0CC32 /* UserManager.swift in Sources */,
 				DA733F7F237E7D15009C2517 /* EstimateMainViewController.swift in Sources */,
 				DAC1A2BB237D4CCD000E21DE /* HomeMainViewController.swift in Sources */,
 				0E7A20DF237DC52100B8BB2E /* AddressTableViewCell.swift in Sources */,
